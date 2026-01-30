@@ -1,0 +1,36 @@
+{
+  "name": "homepage3b",
+  "version": "0.1.0",
+  "description": "My new homepage, now construction-themed!",
+  "keywords": [
+    "milkcool",
+    "homepage"
+  ],
+  "homepage": "https://github.com/Milk-Cool/homepage3b#readme",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/homepage3b/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/homepage3b.git"
+  },
+  "license": "MIT",
+  "author": "Milk_Cool",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

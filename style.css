@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    --border-construction: repeating-linear-gradient(
+        45deg,
+        black, black 1em, gold 1em, gold 2em
+    ) 20;
+}
+
+body {
+    margin: 0;
+    background: skyblue;
+}
+.decoration {
+    pointer-events: none;
+}
+.fixed {
+    position: fixed;
+}
+
+.construction-sign {
+    border: 1em solid gold;
+    border-image: var(--border-construction);
+    width: fit-content;
+    padding: 1em;
+    background: gold;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Archivo Black", sans-serif;
+}
+*:not(h1, h2, h3, h4, h5, h6) {
+    font-family: "Inter", sans-serif;
+}
+
+.construction {
+    width: calc(100vw - 4em);
+    max-width: calc(100vh - 4em);
+    background: url("/construction.png");
+    background-position: 50% 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-image: url("/bar.png");
+    border-image-slice: 0 50% 0 50%;
+    border-image-outset: 0 1em 0 1em;
+}
+
+.construction-floor {
+    padding: 1em;
+    height: calc(760px - 6em);
+    width: calc(60vh - 6em);
+    max-width: calc(100vw - 6em);
+}
