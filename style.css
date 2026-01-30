@@ -40,6 +40,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Inter", sans-serif;
 }
 
+.rooftop {
+    display: block;
+    width: calc(100vh + 2em);
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .construction {
     width: calc(100vw - 4em);
     max-width: calc(100vh - 4em);
@@ -78,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em;
     height: fit-content;
     align-self: center;
-    width: calc(100% / 2 - 6em);
+    width: max(20em, calc(100% / 2 - 6em));
 }
 .construction-object:nth-child(2n + 1) {
     transform: skewY(-7deg);

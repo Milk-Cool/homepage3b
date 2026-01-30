@@ -15,6 +15,7 @@ export default function App() {
                 <h1>CONSTRUCTION SITE</h1>
             </ConstructionSign>
         </Content>
+        <Decoration src="/rooftop.png" className="rooftop" />
         <Construction>
             <ConstructionTitle>Hii</ConstructionTitle>
             <ConstructionFloor>
