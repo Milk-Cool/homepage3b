@@ -2,7 +2,9 @@ import Content from "./Center";
 import Construction from "./Construction";
 import ConstructionFloor from "./ConstructionFloor";
 import ConstructionSign from "./ConstructionSign";
+import ConstructionObject from "./ConstructionObject";
 import Decoration from "./Decoration";
+import ConstructionTitle from "./ConstructionTitle";
 
 export default function App() {
     return <>
@@ -14,8 +16,27 @@ export default function App() {
             </ConstructionSign>
         </Content>
         <Construction>
+            <ConstructionTitle>Hii</ConstructionTitle>
             <ConstructionFloor>
-                <h2>Hii</h2>
+                <ConstructionObject>
+                    <h1>Hii</h1>
+                    <p>Lorem ipsum dolor sit amet. I am going insane.</p>
+                </ConstructionObject>
+                <ConstructionObject>
+                    <h1>Hii</h1>
+                    <p>Lorem ipsum dolor sit amet. I am going insane.</p>
+                </ConstructionObject>
+            </ConstructionFloor>
+            <ConstructionTitle>Hii</ConstructionTitle>
+            <ConstructionFloor>
+                <ConstructionObject>
+                    <h1>Hii</h1>
+                    <p>Lorem ipsum dolor sit amet. I am going insane.</p>
+                </ConstructionObject>
+                <ConstructionObject>
+                    <h1>Hii</h1>
+                    <p>Lorem ipsum dolor sit amet. I am going insane.</p>
+                </ConstructionObject>
             </ConstructionFloor>
         </Construction>
     </>;

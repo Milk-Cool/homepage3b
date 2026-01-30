@@ -57,7 +57,42 @@ h1, h2, h3, h4, h5, h6 {
 
 .construction-floor {
     padding: 1em;
-    height: calc(760px - 6em);
-    width: calc(60vh - 6em);
+    width: calc(100% - 2em);
     max-width: calc(100vw - 6em);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.construction-title + .construction-floor {
+    height: calc(710px - 2em);
+}
+.construction-floor:not(.construction-title + .construction-floor) {
+    height: calc(760px - 2em);
+}
+.construction-object {
+    background: linear-gradient(30deg, silver, lightgray);
+    border: 1em solid slategray;
+    margin: 1em;
+    border-radius: 3em;
+    padding: 1em;
+    height: fit-content;
+    align-self: center;
+    width: calc(100% / 2 - 6em);
+}
+.construction-object:nth-child(2n + 1) {
+    transform: skewY(-7deg);
+}
+.construction-object:nth-child(2n) {
+    transform: skewY(7deg);
+}
+.construction-title {
+    color: white;
+    font-size: 300%;
+    flex-basis: 100%;
+    height: fit-content;
+    height: 50px;
+    margin: 0;
+    background: black;
+    width: fit-content;
 }
