@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em;
     height: fit-content;
     align-self: center;
-    width: max(20em, calc(100% / 2 - 6em));
+    flex-grow: 1;
 }
 .construction-object:nth-child(2n + 1) {
     transform: skewY(-7deg);

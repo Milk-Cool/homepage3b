@@ -21,7 +21,7 @@ export default function App() {
             <ConstructionFloor>
                 <ConstructionObject>
                     <h1>Hii</h1>
-                    <p>Lorem ipsum dolor sit amet. I am going insane.</p>
+                    <p>Lorem ipsum dolor sit amet. I am going insane. Lorem ipsum dolor sit amet. I am going insane.</p>
                 </ConstructionObject>
                 <ConstructionObject>
                     <h1>Hii</h1>
