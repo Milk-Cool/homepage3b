@@ -39,6 +39,7 @@ export default function App() {
                     <p>Lorem ipsum dolor sit amet. I am going insane.</p>
                 </ConstructionObject>
             </ConstructionFloor>
+            <Decoration src="/birds.png" w={100} style={{ position: "absolute", left: 0, zIndex: -1 }} />
         </Construction>
     </>;
 }
