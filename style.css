@@ -19,6 +19,10 @@ body {
     position: fixed;
 }
 
+a {
+    color: red;
+}
+
 .construction-sign {
     border: 1em solid gold;
     border-image: var(--border-construction);
@@ -81,19 +85,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .construction-object {
     background: linear-gradient(30deg, silver, lightgray);
-    border: 1em solid slategray;
-    margin: 1em;
-    border-radius: 3em;
-    padding: 1em;
+    border: .5em solid slategray;
+    margin: .5em;
+    border-radius: 2em;
+    padding: .5em;
     height: fit-content;
     align-self: center;
     flex-grow: 1;
 }
 .construction-object:nth-child(2n + 1) {
-    transform: skewY(-7deg);
+    transform: skewY(-4deg);
 }
 .construction-object:nth-child(2n) {
-    transform: skewY(7deg);
+    transform: skewY(4deg);
 }
 .construction-title {
     color: white;
