@@ -163,5 +163,6 @@ export default function App() {
                 </Project>
             </ConstructionFloor>
         </Construction>
+        <div id="crane" style={{ position: "relative" }}><Decoration src="/crane.png" style={{ position: "absolute", bottom: 0, zIndex: -1, transform: `translateX(-20vw)`, maxWidth: "100vw" }} /></div>
     </>;
 }
