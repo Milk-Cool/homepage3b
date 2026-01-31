@@ -6,8 +6,23 @@ import ConstructionObject from "./ConstructionObject";
 import Decoration from "./Decoration";
 import ConstructionTitle from "./ConstructionTitle";
 import Project from "./Project";
+import { useState } from "react";
+
+type WebringDirection = {
+    url: string;
+    name: string;
+};
+type Webring = {
+    prev: WebringDirection;
+    next: WebringDirection;
+};
 
 export default function App() {
+    const [webring, setWebring] = useState<Webring | null>(null);
+
+    if(webring === null)
+        fetch("https://webring.otomir23.me/31/data").then(x => x.json()).then(res => setWebring(res));
+
     return <>
         <Decoration src="/clouds.png" w={100} style={{ position: "fixed", opacity: 0.7, zIndex: -1 }} />
         <Content>
@@ -56,7 +71,6 @@ export default function App() {
                     <p>A Neocities scanner that scans for 88x31 web buttons</p>
                 </Project>
             </ConstructionFloor>
-            <Decoration src="/birds.png" w={100} style={{ position: "absolute", left: 0, zIndex: -1 }} />
             <ConstructionFloor>
                 <Project name="PC64K" links={{
                     "GitHub": "https://github.com/PC64K",
@@ -120,6 +134,7 @@ export default function App() {
                     <p>An AquesTalk-based UTAU voicebank generator</p>
                 </Project>
             </ConstructionFloor>
+            <Decoration src="/birds.png" w={100} style={{ position: "absolute", left: 0, zIndex: -1 }} />
             <ConstructionFloor>
                 <Project name="yourdns" links={{
                     "GitHub": "https://github.com/Milk-Cool/yourdns-compose"
@@ -193,6 +208,38 @@ export default function App() {
                 }}>
                     <p>A status page for Pretendo</p>
                 </Project>
+            </ConstructionFloor>
+            {webring ? <>
+                <ConstructionTitle>Webring</ConstructionTitle>
+                <ConstructionFloor>
+                    <ConstructionObject>
+                        <h1>Previous</h1>
+                        <h4>{webring.prev.name}</h4>
+                        <a href={webring.prev.url}>&lt;-- Go</a>
+                    </ConstructionObject>
+                    <ConstructionObject>
+                        <h1>Next</h1>
+                        <h4>{webring.next.name}</h4>
+                        <a href={webring.next.url}>Go --&gt;</a>
+                    </ConstructionObject>
+                </ConstructionFloor>
+            </> : ""}
+            <ConstructionTitle>Credits</ConstructionTitle>
+            <ConstructionFloor>
+                <ConstructionObject>
+                    <h1>© milk_cool, 2024-{new Date().getFullYear()}</h1>
+                    <h4>Fonts - <a href="https://fonts.google.com" target="_blank">Google Fonts</a></h4>
+                    <h4>Photos:</h4>
+                    <ul>
+                        <li>Crane: <a href="https://unsplash.com/photos/yellow-crane-under-blue-sky-during-daytime--7jXloyafUY" target="_blank">Unsplash</a></li>
+                        <li>Clouds: <a href="https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-vXU_wJ7YmNc" target="_blank">Unsplash</a></li>
+                        <li>Construction: <a href="https://unsplash.com/photos/a-group-of-men-standing-on-top-of-a-building-under-construction-hmrxzjBaonA" target="_blank">Unsplash</a></li>
+                        <li>Iron bars: <a href="https://www.pickpik.com/iron-rods-reinforcing-bars-rods-steel-bars-construction-material-material-8455" target="_blank">Pickpik</a></li>
+                        <li>Roof: <a href="https://unsplash.com/photos/a-rusted-metal-roof-with-two-chimneys-cJIPBcUop78" target="_blank">Unsplash</a></li>
+                        <li>Birds: <a href="https://unsplash.com/photos/low-angle-photography-of-flock-of-silhouette-of-bird-illustration-cX0Yxw38cx8" target="_blank">Unsplash</a></li>
+                        <li>Grass: <a href="https://unsplash.com/photos/green-field-YRfaG3JVwkU" target="_blank">Unsplash</a></li>
+                    </ul>
+                </ConstructionObject>
             </ConstructionFloor>
         </Construction>
         <div id="crane" style={{ position: "relative" }}><Decoration src="/crane.png" style={{ position: "absolute", bottom: 0, zIndex: -1, transform: `translateX(-20vw)`, maxWidth: "100vw" }} /></div>
