@@ -164,5 +164,6 @@ export default function App() {
             </ConstructionFloor>
         </Construction>
         <div id="crane" style={{ position: "relative" }}><Decoration src="/crane.png" style={{ position: "absolute", bottom: 0, zIndex: -1, transform: `translateX(-20vw)`, maxWidth: "100vw" }} /></div>
+        <Decoration src="/grass.png" w={100} style={{ boxShadow: "0 10px black" }} />
     </>;
 }
