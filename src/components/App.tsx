@@ -120,6 +120,38 @@ export default function App() {
                     <p>An AquesTalk-based UTAU voicebank generator</p>
                 </Project>
             </ConstructionFloor>
+            <ConstructionFloor>
+                <Project name="yourdns" links={{
+                    "GitHub": "https://github.com/Milk-Cool/yourdns-compose"
+                }}>
+                    <p>A selfhosted DNS server that lets anyone register a free domain</p>
+                </Project>
+                <Project name="TheRhythmGarden" links={{
+                    "GitHub": "https://github.com/Milk-Cool/TheRhythmGarden",
+                    "Wesbite": "https://garden.milkcool.ru"
+                }}>
+                    <p>A rhythm game with vines!</p>
+                </Project>
+                <Project name="yadsi" links={{
+                    "GitHub": "https://github.com/Milk-Cool/yadsi"
+                }}>
+                    <p>A DuckyScript interpreter for Raspberry Pi Pico that allows you to manage scripts with just your file explorer</p>
+                </Project>
+            </ConstructionFloor>
+            <ConstructionFloor>
+                <Project name="UNN" links={{
+                    "GitHub": "https://github.com/Milk-Cool/UNN",
+                    "Website": "https://unn.milkcool.ru/"
+                }}>
+                    <p>You're the neural network! A website where anyone can participate in calculating weights for a neural network to recognize numbers</p>
+                </Project>
+                <Project name="Polyship" links={{
+                    "GitHub": "https://github.com/Milk-Cool/polymarket-ysws",
+                    "Wesbite": "https://polyship.milkcool.ru/"
+                }}>
+                    <p>A YSWS program for hackclubbers where you ship projects and GAMBLE!</p>
+                </Project>
+            </ConstructionFloor>
             <ConstructionTitle>Letovo</ConstructionTitle>
             <ConstructionFloor>
                 <Project name="LetovoPing" links={{
