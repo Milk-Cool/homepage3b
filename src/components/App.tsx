@@ -241,6 +241,12 @@ export default function App() {
                     </ul>
                 </ConstructionObject>
             </ConstructionFloor>
+            <ConstructionFloor>
+                <ConstructionObject>
+                    <h1>88x31 buttons</h1>
+                    <a href="https://glutesha.ru" target="_blank"><img src="buttons/bf.png" /></a><a href="https://milkcool.ru" target="_blank"><img src="buttons/mybutton.gif" /></a><img src="buttons/computer.png" /><img src="buttons/xpbar.png" /><img src="buttons/html.gif" /><img src="buttons/minecraft.png" /><img src="buttons/chrome.png" /><img src="buttons/css.png" /><img src="buttons/buttons.png" /><img src="buttons/miku.gif" /><img src="buttons/buttons.png" /><img src="buttons/wii.png" /><img src="buttons/fukkireta.gif" /><img src="buttons/server.gif" /><img src="buttons/yeah.png" /><img src="buttons/scotthere.gif" /><img src="buttons/truth.png" /><img src="buttons/rh.png" />
+                </ConstructionObject>
+            </ConstructionFloor>
         </Construction>
         <div id="crane" style={{ position: "relative" }}><Decoration src="/crane.png" style={{ position: "absolute", bottom: 0, zIndex: -1, transform: `translateX(-20vw)`, maxWidth: "100vw" }} /></div>
         <Decoration src="/grass.png" w={100} style={{ boxShadow: "0 10px black" }} />
