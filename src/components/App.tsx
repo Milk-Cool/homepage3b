@@ -244,7 +244,7 @@ export default function App() {
             <ConstructionFloor>
                 <ConstructionObject>
                     <h1>88x31 buttons</h1>
-                    <a href="https://milkcool.ru" target="_blank"><img src="buttons/mybutton.gif" /></a><img src="buttons/computer.png" /><img src="buttons/xpbar.png" /><img src="buttons/html.gif" /><img src="buttons/minecraft.png" /><img src="buttons/chrome.png" /><img src="buttons/css.png" /><img src="buttons/buttons.png" /><img src="buttons/miku.gif" /><img src="buttons/buttons.png" /><img src="buttons/wii.png" /><img src="buttons/fukkireta.gif" /><img src="buttons/server.gif" /><img src="buttons/yeah.png" /><img src="buttons/scotthere.gif" /><img src="buttons/truth.png" /><img src="buttons/rh.png" />
+                    <a href="https://glutesha.ru" target="_blank"><img src="buttons/bf.png" /></a><a href="https://milkcool.ru" target="_blank"><img src="buttons/mybutton.gif" /></a><img src="buttons/computer.png" /><img src="buttons/xpbar.png" /><img src="buttons/html.gif" /><img src="buttons/minecraft.png" /><img src="buttons/chrome.png" /><img src="buttons/css.png" /><img src="buttons/buttons.png" /><img src="buttons/miku.gif" /><img src="buttons/buttons.png" /><img src="buttons/wii.png" /><img src="buttons/fukkireta.gif" /><img src="buttons/server.gif" /><img src="buttons/yeah.png" /><img src="buttons/scotthere.gif" /><img src="buttons/truth.png" /><img src="buttons/rh.png" />
                 </ConstructionObject>
             </ConstructionFloor>
         </Construction>
