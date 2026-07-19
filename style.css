@@ -86,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(760px - 2em);
 }
 .construction-object {
-    background: linear-gradient(30deg, silver, lightgray);
+    /* background: linear-gradient(30deg, silver, lightgray); */
+    background: linear-gradient(#ffffffd0, #ffffffb0), url("/metal.png");
     border: .5em solid slategray;
     margin: .5em;
     border-radius: 2em;
@@ -96,10 +97,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-grow: 1;
 }
 .construction-object:nth-child(2n + 1) {
-    transform: skewY(-4deg);
+    transform: skewY(-2deg);
 }
 .construction-object:nth-child(2n) {
-    transform: skewY(4deg);
+    transform: skewY(2deg);
 }
 .construction-title {
     color: white;

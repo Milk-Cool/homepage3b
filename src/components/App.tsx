@@ -238,6 +238,7 @@ export default function App() {
                         <li>Roof: <a href="https://unsplash.com/photos/a-rusted-metal-roof-with-two-chimneys-cJIPBcUop78" target="_blank">Unsplash</a></li>
                         <li>Birds: <a href="https://unsplash.com/photos/low-angle-photography-of-flock-of-silhouette-of-bird-illustration-cX0Yxw38cx8" target="_blank">Unsplash</a></li>
                         <li>Grass: <a href="https://unsplash.com/photos/green-field-YRfaG3JVwkU" target="_blank">Unsplash</a></li>
+                        <li>Metal texture: <a href="https://unsplash.com/photos/a-close-up-of-a-metal-diamond-plate-v6uiP2MD6vs">Unsplash</a></li>
                     </ul>
                 </ConstructionObject>
             </ConstructionFloor>
