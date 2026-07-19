@@ -21,7 +21,7 @@ export default function App() {
     const [webring, setWebring] = useState<Webring | null>(null);
 
     if(webring === null)
-        fetch("https://webring.otomir23.me/31/data").then(x => x.json()).then(res => setWebring(res));
+        fetch("https://webring.otomir23.me/milkcool/data").then(x => x.json()).then(res => setWebring(res));
 
     return <>
         <Decoration src="/clouds.png" w={100} style={{ position: "fixed", opacity: 0.7, zIndex: -1 }} />
